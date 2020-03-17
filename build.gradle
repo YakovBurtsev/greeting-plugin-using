@@ -3,7 +3,7 @@ buildscript {
         mavenLocal()
     }
     dependencies {
-        classpath 'org.example:greeting-plugin:1.0'
+        classpath 'org.example:greeting-plugin:1.1'
     }
 }
 apply plugin: 'org.example.greeting'
