@@ -2,14 +2,14 @@ buildscript {
     repositories {
         mavenLocal()
     }
-    dependencies {
-        classpath 'org.example:greeting-plugin:1.2'
-    }
 }
-apply plugin: 'org.example.greeting'
+
+plugins {
+    id 'org.example.greeting' version '1.2'
+}
 
 greeting {
-    message = 'Hello'
+    message = 'Hi'
     greeter = 'Gradle'
 }
 
